@@ -1,0 +1,13 @@
+.to_top_btn{
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius:  var(--secondary-border-radius);
+    background-color: var(--dominant-color);
+    color: var(--implementary-color);
+    text-align: center;
+    font-size: 14;
+}
+.to_top_btn:hover {
+    cursor: pointer;
+}
