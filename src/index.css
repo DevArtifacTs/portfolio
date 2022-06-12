@@ -23,6 +23,10 @@
   padding: 0;
 }
 
+.root {
+  position: relative;
+}
+
 
 /* Set all element to border-box to easy for calculate element size */
 html {
