@@ -45,7 +45,7 @@ function About(props) {
                     </div>
                 </div>
                 <div className="row td-flex justify-content-end " >
-                    <div className="col-3 text-end ms-1 ">
+                    <div className="col-5 col-sm-3 col-md-3 col-lg-3 text-end ms-1 ">
                         <img className='img-fluid ' src="./MERN-logo.png" alt="" />
                     </div>
                 </div>
