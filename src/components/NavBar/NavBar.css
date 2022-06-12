@@ -12,6 +12,20 @@
     cursor: pointer;
 }
 
+.mobile-dropdown-menu{
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    top: -15px;
+    right: 0px;
+    background-color: var(--light-accent-color);
+    transition: position 1s ease-in-out;
+}
+
+.close-mobile-menu-btn{
+    margin-top: 30px;
+}
+
 @media only screen and (max-width: 576px) {
     .desktop-menu{
         display: none !important;

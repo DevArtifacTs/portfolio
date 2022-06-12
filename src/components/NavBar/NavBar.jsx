@@ -4,9 +4,7 @@ import React, {useState} from 'react';
 import './NavBar.css';
 
 //antd icon
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { IconContext } from "react-icons";
-import { MenuOutlined } from '@ant-design/icons';
+import { MenuOutlined, CloseOutlined } from '@ant-design/icons';
 
 //components
 import ProgressComponent from '../ProgressComponent/ProgressComponent';
@@ -34,7 +32,34 @@ function NavBar(props) {
                             <MenuOutlined 
                                 className='mobile-menu-btn'
                                 style={{ fontSize: '30px', color: 'var(--implementary-color)' }}    
+                                onClick={handleMobileMenu}
                             />
+                            {/* for mobile dropdown menu */}
+                            {mobileMenu &&
+                                <div className="mobile-dropdown-menu row d-flex justify-content-end ">
+                                    <div className="col close-mobile-menu-btn">
+                                        <CloseOutlined 
+                                            style={{ fontSize: '30px', color: 'var(--implementary-color)' }}  
+                                            onClick={handleMobileMenu}
+                                            />
+                                    </div>
+                                <ul className='col d-flex flex-column justify-content-between align-items-start p-2'>
+                                    <li className='my-3'>
+                                        <Btn  title='About' 
+                                            stylish={{backgroundColor : 'var(--implementary-color)', color : 'var(--dominant-color'}}/>
+                                    </li >
+                                    <li className='my-3'>
+                                        <Btn  title='Skills'
+                                        stylish={{backgroundColor : 'var(--implementary-color)', color : 'var(--dominant-color'}}/>
+                                    </li>
+                                    <li className='my-3'>
+                                        <Btn  title='Projects' 
+                                        stylish={{backgroundColor : 'var(--implementary-color)', color : 'var(--dominant-color'}}/>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            }
                         </div>
                         <div className="desktop-menu d-flex justify-content-end ">
                             <ul className='d-flex justify-content-between p-2'>
@@ -53,11 +78,7 @@ function NavBar(props) {
                             </ul>
                         </div>
                     </div>
-                    {/* <div className="row d-flex justify-content-end">
-                        <div className="col progress-bar d-flex justify-content-end">
-                            <ProgressComponent scrollPosition={scrollPosition} />
-                        </div>
-                    </div> */}
+                    
                 </div>
             </div>
         </div>
