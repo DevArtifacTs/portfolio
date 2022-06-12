@@ -1,9 +1,16 @@
-import { Button } from 'antd';
 import React from 'react';
+import './Btn.css'
 
-const Btn = ({title}) => (
+const Btn = ({title, className, to, role, stylish}) => (
   <>
-    <Button type="primary">{title}</Button>
+    <a 
+      className="btn btn-primary btn-effect" 
+      href={to} 
+      role="button" 
+      style={stylish}
+      >
+        {title}
+      </a>
   </>
 );
 

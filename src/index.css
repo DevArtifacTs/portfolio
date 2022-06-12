@@ -28,6 +28,11 @@ html {
 
 *, *::before, *::after {
   box-sizing: inherit;
+  list-style: none;
+}
+
+link {
+  text-decoration: none;
 }
 
 /* Set body to expand full of screen */

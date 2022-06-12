@@ -23,13 +23,6 @@ const BackToTop = () => (
       padding: 8,
     }}
   >
-    <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>
-    <div>Scroll to bottom</div>
     <BackTop   visibilityHeight={300} duration={200} >
       <div className={`${styles.to_top_btn}`}  >UP </div>
     </BackTop>
